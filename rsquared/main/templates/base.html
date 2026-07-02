@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>R Sqauared Counsoling</title>
+    <link rel="stylesheet" href="{% static 'main/stylesheet.css' %}">
+</head>
+<body>
+        <div class="topnav">
+            <a class="active" href="{% url 'home' %}">Home</a>
+            <a href="#">Randy's Bio</a>
+            <a href="#">Therapy</a>
+            <a href="#">Wellness</a>
+            <a href="#">Evaluations</a>
+            <a href="{% url 'contact' %}">Contact</a>
+        </div>
+        <h1 style="text-align: center;">Let’s meet Randy</h1>
+    {% block content%}
+    {% endblock %}
+        <footer>
+            <p style="display: inline-block">
+                Contact <br>
+                Randy Ruhge <br>
+                8790 F St <br>
+                Suite 527 <br>
+                Omaha, NE 68127 <br>
+                <a href="tel:402-660-1987">(402) 660-1987</a> <br>
+                <a href="mailto:rsquaredcounseling@gmail.com">rsquaredcounseling@gmail.com</a>
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001.0568038908746!2d-96.0514282845794!3d41.22053257927989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87938cbfa859c021%3A0x67a970abd4151c86!2s8790%20F%20St%2C%20Omaha%2C%20NE%2068127!5e0!3m2!1sen!2sus!4v1615166307191!5m2!1sen!2sus" width="300" height="200"  style="display: inline-block" allowfullscreen="" loading="lazy"></iframe>
+            <p style="text-align: center">
+                DISCLAIMER <br>
+                All materials and information on website are provided for informational and educational purposes only and is not intended to be a substitute for professional mental health services or treatment. If you are experiencing an emergency, please contact 911.
+            </p>
+            <small>
+                <p style="text-align: center">&copy <script>document.write(new Date().getFullYear())</script><br>
+            </small>
+
+        </footer>
+    {% if messages %}
+        <div class="splash-banner">
+            {% for message in messages %}
+                <p>{{ message }}</p>
+            {% endfor %}
+        </div>
+    {% endif %}
+</body>
+</html>
