@@ -1,14 +1,33 @@
 {%extends 'base.html' %}
 
 {%block content%}
-    <form method="POST" action="{% url 'contact' %}">
-        {% csrf_token %}
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="5" required></textarea><br><br>
-        <button type="submit">Send Message</button>
-    </form>
+    <div class="contact-div">
+        <form method="POST" action="{% url 'contact' %}" class="contact_form">
+            {% csrf_token %}
+            <label for="name" class="form_label">Name:</label><br>
+            <input class="input_box" type="text" id="name" name="name" required><br><br>
+            <label for="email" class="form_label">Email:</label><br>
+            <input class="input_box"  type="email" id="email" name="email" required><br><br>
+            <label for="message" class="form_label">Message:</label><br>
+            <textarea class="input_box" id="message" name="message" rows="5" required></textarea><br><br>
+            <button type="submit">Send Message</button>
+        </form>
+        <div class="right_box">
+            <div class="address_block">
+                <p class="address">
+                    8790 F St <br>
+                    Suite 527 <br>
+                    Omaha, NE 68127 <br>
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001.0568038908746!2d-96.0514282845794!3d41.22053257927989!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87938cbfa859c021%3A0x67a970abd4151c86!2s8790%20F%20St%2C%20Omaha%2C%20NE%2068127!5e0!3m2!1sen!2sus!4v1615166307191!5m2!1sen!2sus" width="300" height="200"  class="map" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="address_block">
+                <p class="address">
+                103 N Latta Ave <br>
+                Murray NE 68409 <br>
+                </p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3015.0169482698543!2d-95.92975852385003!3d40.91537427136384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87946f11a8ae7759%3A0x41082240ea9601d5!2s103%20N%20Latta%20Ave%2C%20Murray%2C%20NE%2068409!5e0!3m2!1sen!2sus!4v1783034978444!5m2!1sen!2sus" width="300" height="200" class="map" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
 {% endblock %}
