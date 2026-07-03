@@ -32,7 +32,7 @@ def therapy(request):
     return render(request, 'main/therapy.html', {'active': 'therapy'})
 
 def speciality(request):
-    return render(request, 'main/specialities.html', {'active': 'specialities'})
+    return render(request, 'main/specialities.html', {'active': 'Specialties'})
 
 def modalities(request):
     return render(request, 'main/modalities.html', {'active': 'modalities'})
