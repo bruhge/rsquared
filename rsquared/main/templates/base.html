@@ -3,17 +3,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>R Sqauared Counsoling</title>
+    <title>R Squared Counseling</title>
     <link rel="stylesheet" href="{% static 'main/stylesheet.css' %}">
 </head>
 <body>
         <div class="topnav">
-            <a class="active" href="{% url 'home' %}">Home</a>
-            <a href="#">Randy's Bio</a>
-            <a href="#">Therapy</a>
-            <a href="#">Wellness</a>
-            <a href="#">Evaluations</a>
-            <a href="{% url 'contact' %}">Contact</a>
+            <a class="{% if active == 'home' %}active{% endif %}" href="{% url 'home' %}">Home</a>
+            <a class="{% if active == 'therapy' %}active{% endif %}" href="{% url 'therapy' %}">Therapy</a>
+            <a class="{% if active == 'specialities' %}active{% endif %}" href="{% url 'speciality' %}">Specialities</a>
+            <a class="{% if active == 'evaluations' %}active{% endif %}" href="{% url 'evaluations' %}">Evaluations</a>
+            <a class="{% if active == 'modalities' %}active{% endif %}" href="{% url 'modalities' %}">Modalities</a>
+            <a class="{% if active == 'contact' %}active{% endif %}" href="{% url 'contact' %}">Contact</a>
         </div>
     {% block content%}
     {% endblock %}

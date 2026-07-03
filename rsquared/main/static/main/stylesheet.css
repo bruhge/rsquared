@@ -163,3 +163,47 @@ button:active {
   min-height: 120px;
   resize: vertical; /* or none */
 }
+
+.about_wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.about_title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+
+.about_text {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.eval_wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.eval_title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.eval_intro {
+  font-size: 20px;
+  line-height: 1.6;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.eval_list {
+  font-size: 20px;
+  line-height: 1.8;
+  list-style-type: disc;
+  padding-left: 40px;
+}
