@@ -2,25 +2,65 @@
 {% block content %}
 
 <div class="about_wrapper">
-    <h1 class="about_title">Let’s meet Randy</h1>
-    <div class="about_text">
+    <div class="hero">
+        <h1 class="hero_title">R Squared Counseling</h1>
+        <p class="hero_tagline">Practical, compassionate therapy for real‑world challenges.</p>
+        <p class="hero_intro">
+            At R Squared Counseling, Randy provides a grounded and supportive space for individuals navigating trauma,
+            stress, life transitions, and emotional challenges. With decades of experience in emergency services and public
+            safety, he understands the weight people carry — and offers therapy that helps them heal, grow, and reclaim
+            their lives.
+        </p>
+    </div>
+    <div class="hero">
         <p>
-            I specialize in supporting First Responders and individuals who work in high stress, high impact roles.
-            My background includes 20 years as an EMT/Firefighter (primarily volunteer), 15 years in Emergency Management,
-            and 30 years in law enforcement across both county and city departments. These experiences allow me to understand
-            the unique pressures, culture, and unspoken expectations that come with serving others. I am a state registered
-            provider for drug and alcohol assessments and treatment.
+            At R Squared Counseling, the mission is simple: to help people heal, grow, and reclaim their lives.
         </p>
         <p>
-        I primarily treat adults and also have experience working with adolescents. My work spans preventive care,
-            crisis intervention, and post crisis recovery, with an emphasis on early identification of emotional concerns
-            before they escalate. My approach blends Positive Psychology, CBT, Mindfulness, and Solution Focused work.
+            Whether you’re carrying the weight of trauma, navigating stress, rebuilding after loss, or simply trying to
+            find your footing again, Randy offers a place where you can be heard, understood, and supported.
         </p>
         <p>
-        I believe therapy is your space and your story. You decide what matters most, and I help you explore it with clarity
-            and compassion. I draw from my own diverse experiences to relate to clients, and when your experience is different
-            from mine, I listen deeply to understand your world and how it has shaped you.
+            Grounded in evidence‑based practice and decades of real‑world experience, R Squared Counseling provides
+            practical and meaningful support for individuals facing trauma, stress, life transitions, and emotional
+            challenges. Randy is committed to creating a space where clients can explore their experiences, build
+            resilience, and move toward healthier, more fulfilling lives.
         </p>
+    </div>
+    <div class="hero">
+        <h2 class="hero_tagline">Who I help</h2>
+        <p>
+            Randy works with adults, first responders, veterans, and individuals in high‑stress or
+            high‑impact roles. He supports people navigating trauma, anxiety, depression, substance use, grief, and
+            major life transitions. Whether someone is carrying long‑term emotional weight or facing a new challenge,
+            Randy provides a grounded, compassionate space to work through it.
+        </p>
+    </div>
+    <div class="hero">
+        <h2 class="hero_tagline">What I Offer</h2>
+        <p>
+            Randy provides evidence‑based therapy tailored to each person’s needs. His work includes trauma‑informed
+            care, EMDR, CBT, DBT, and support for anxiety, depression, substance use, and life transitions. He also
+            specializes in working with first responders, veterans, and individuals in high‑stress roles.
+        </p>
+        <p>
+            Explore the services below to learn more about how Randy can help.
+        </p>
+        <ul>
+            <li><a href="{% url 'therapy' %}">Therapies</a></li>
+            <li><a href="{% url 'Specialties' %}">Specialties</a></li>
+            <li><a href="{% url 'evaluations' %}">Evaluations</a></li>
+            <li><a href="{% url 'modalities' %}">Modalities</a></li>
+        </ul>
+    </div>
+    <div class="hero">
+        <h2 class="hero_tagline">Ready to Begin?</h2>
+        <p>
+            If you’re ready to take the next step, Randy is here to help. Whether you have questions, want to schedule
+            an appointment, or simply want to explore your options, you can reach out anytime. Your path forward starts
+            with a conversation.
+        </p>
+        <a href="{% url 'contact' %}">Contact Randy</a>
     </div>
 </div>
 {% endblock %}

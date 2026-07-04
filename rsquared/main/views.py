@@ -36,3 +36,6 @@ def speciality(request):
 
 def modalities(request):
     return render(request, 'main/modalities.html', {'active': 'modalities'})
+
+def about(request):
+    return render(request, 'main/about.html', {'active': 'about'})

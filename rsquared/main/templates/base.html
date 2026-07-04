@@ -9,6 +9,7 @@
 <body>
         <div class="topnav">
             <a class="{% if active == 'home' %}active{% endif %}" href="{% url 'home' %}">Home</a>
+            <a class="{% if active == 'about' %}active{% endif %}" href="{% url 'about' %}">About</a>
             <a class="{% if active == 'therapy' %}active{% endif %}" href="{% url 'therapy' %}">Therapy</a>
             <a class="{% if active == 'Specialties' %}active{% endif %}" href="{% url 'Specialties' %}">Specialties</a>
             <a class="{% if active == 'evaluations' %}active{% endif %}" href="{% url 'evaluations' %}">Evaluations</a>

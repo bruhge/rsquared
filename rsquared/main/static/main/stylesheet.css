@@ -207,3 +207,36 @@ button:active {
   list-style-type: disc;
   padding-left: 40px;
 }
+
+.hero {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.hero_title {
+  font-size: 42px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.hero_tagline {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.hero_intro {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+,hero_photo {
+  width: 250px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 20px auto;
+}
